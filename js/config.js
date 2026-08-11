@@ -6,7 +6,7 @@ window.NOVA_CONFIG = Object.freeze({
   exitSurveyUrl: "./test-exit.html",
   // Optional redundant backup. Leave blank while testing. After deploying Apps Script,
   // paste the /exec web-app URL here. Qualtrics remains the analysis source of truth.
-  backupWebAppUrl: "",
+  backupWebAppUrl: "https://script.google.com/macros/s/AKfycbxQ55s5Xhcpje9uR6hkHwj_auV78azxY5T0J0XZuj2Xh4WQZT7SGQ-utSYDt1RxHn83/exec",
   autoRedirectSeconds: 3,
   maxExitUrlLength: 1800
 });
