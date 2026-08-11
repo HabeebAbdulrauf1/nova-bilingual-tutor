@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="color-scheme" content="light">
+  <title>Nova Learning Activity</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="app-shell">
+    <div class="topbar">
+      <div class="brand">Nova</div>
+      <div id="testBadge" class="badge hidden">TEST MODE</div>
+    </div>
+    <div id="progressWrap" class="progress-wrap hidden" aria-label="Study progress">
+      <div class="progress-label"><span id="progressPhase">Learning activity</span><span id="progressText"></span></div>
+      <div class="progress-track"><div id="progressBar" class="progress-bar"></div></div>
+    </div>
+    <section id="app" class="card" aria-live="polite"></section>
+    <div class="footer-note">Please complete this activity independently on this device.</div>
+  </main>
+  <iframe name="backupFrame" id="backupFrame" class="hidden" title="backup"></iframe>
+  <script src="js/config.js"></script>
+  <script src="js/content.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

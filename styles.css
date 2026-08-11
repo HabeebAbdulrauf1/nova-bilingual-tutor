@@ -1,0 +1,64 @@
+:root {
+  --bg: #f5f7fb;
+  --card: #ffffff;
+  --text: #172033;
+  --muted: #667085;
+  --border: #d9e0ea;
+  --primary: #1f4aa8;
+  --primary-dark: #173a82;
+  --success-bg: #edf8f0;
+  --success-text: #17623a;
+  --warn-bg: #fff7e6;
+  --warn-text: #7a4b00;
+  --danger-bg: #fff0f0;
+  --danger-text: #9c1c1c;
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; min-height: 100%; background: var(--bg); color: var(--text); font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif; }
+body { display: flex; justify-content: center; }
+.app-shell { width: 100%; max-width: 720px; min-height: 100vh; padding: 16px 14px 36px; }
+.topbar { display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px; gap: 12px; }
+.brand { font-weight: 800; letter-spacing: .2px; font-size: 19px; }
+.badge { font-size: 12px; font-weight: 700; color: var(--danger-text); background: var(--danger-bg); border: 1px solid #f2c9c9; padding: 5px 9px; border-radius: 999px; }
+.progress-wrap { margin: 8px 0 14px; }
+.progress-label { display: flex; justify-content: space-between; font-size: 13px; color: var(--muted); margin-bottom: 6px; }
+.progress-track { height: 8px; background: #e6ebf2; border-radius: 999px; overflow: hidden; }
+.progress-bar { height: 100%; width: 0; background: var(--primary); transition: width .2s ease; }
+.card { background: var(--card); border: 1px solid var(--border); border-radius: 16px; padding: 20px; box-shadow: 0 4px 18px rgba(18, 38, 63, .06); }
+h1, h2, h3 { margin-top: 0; line-height: 1.25; }
+h1 { font-size: 25px; }
+h2 { font-size: 21px; }
+p { font-size: 17px; line-height: 1.55; }
+.small { font-size: 14px; color: var(--muted); }
+.question { font-size: 18px; line-height: 1.5; font-weight: 650; margin-bottom: 16px; }
+.options { display: grid; gap: 10px; }
+.option-btn, .primary-btn, .secondary-btn, .scale-btn { min-height: 48px; border-radius: 12px; font-size: 16px; cursor: pointer; }
+.option-btn { width: 100%; text-align: left; background: #fff; color: var(--text); border: 1.5px solid var(--border); padding: 13px 14px; }
+.option-btn:hover, .option-btn:focus { border-color: var(--primary); outline: 3px solid rgba(31, 74, 168, .10); }
+.option-btn:disabled { cursor: default; opacity: .78; }
+.option-btn.selected { border-color: var(--primary); background: #eef3ff; }
+.primary-btn { width: 100%; border: none; color: #fff; background: var(--primary); padding: 13px 18px; font-weight: 750; }
+.primary-btn:hover, .primary-btn:focus { background: var(--primary-dark); }
+.secondary-btn { width: 100%; border: 1.5px solid var(--primary); color: var(--primary); background: #fff; padding: 13px 18px; font-weight: 700; }
+.feedback { margin-top: 18px; padding-top: 16px; border-top: 1px solid var(--border); }
+.feedback-status { display: inline-block; font-weight: 800; padding: 6px 10px; border-radius: 999px; margin-bottom: 10px; }
+.feedback-status.correct { background: var(--success-bg); color: var(--success-text); }
+.feedback-status.incorrect { background: var(--warn-bg); color: var(--warn-text); }
+.key-box { background: #f8fafc; border: 1px solid var(--border); border-radius: 12px; padding: 13px 14px; margin: 10px 0; }
+.scale-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 9px; margin: 14px 0; }
+.scale-btn { border: 1.5px solid var(--border); background: #fff; font-weight: 750; }
+.scale-btn.selected { background: #eef3ff; border-color: var(--primary); color: var(--primary-dark); }
+.scale-endpoints { display: flex; justify-content: space-between; gap: 14px; font-size: 13px; color: var(--muted); }
+.notice { border-radius: 12px; padding: 12px 14px; margin: 14px 0; background: #eef3ff; color: #263d72; border: 1px solid #d5def4; }
+.error { border-radius: 12px; padding: 12px 14px; margin: 14px 0; background: var(--danger-bg); color: var(--danger-text); border: 1px solid #f2c9c9; }
+.hidden { display: none !important; }
+.footer-note { text-align: center; color: var(--muted); font-size: 12px; padding-top: 14px; }
+@media (max-width: 480px) {
+  .app-shell { padding: 10px 9px 24px; }
+  .card { padding: 17px 14px; border-radius: 13px; }
+  h1 { font-size: 23px; }
+  h2 { font-size: 20px; }
+  p, .question { font-size: 16.5px; }
+  .option-btn { font-size: 16px; padding: 12px; }
+  .scale-grid { grid-template-columns: repeat(3, 1fr); }
+}

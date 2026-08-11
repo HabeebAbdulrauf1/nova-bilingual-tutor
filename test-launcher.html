@@ -1,0 +1,11 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Nova Test Launcher</title><link rel="stylesheet" href="styles.css"></head>
+<body><main class="app-shell"><section class="card">
+<h1>Nova Test Launcher</h1><p>This page simulates the Entry Qualtrics redirect. It is for testing only.</p>
+<label>Fake PID<br><input id="pid" value="R_TEST001" style="width:100%;padding:12px;font-size:16px;margin:6px 0 14px"></label>
+<label>Condition<br><select id="condition" style="width:100%;padding:12px;font-size:16px;margin:6px 0 14px"><option value="A">A — English</option><option value="B">B — Strategic Pidgin</option></select></label>
+<button class="primary-btn" id="launch">Launch Nova</button>
+<p class="small">Tip: use a new fake PID for a completely fresh run. Reusing the same PID tests resume behavior.</p>
+</section></main>
+<script>document.getElementById('launch').onclick=()=>{const p=encodeURIComponent(document.getElementById('pid').value.trim());const c=document.getElementById('condition').value;location.href=`index.html?pid=${p}&condition=${c}&version=1.0.0`;};</script>
+</body></html>

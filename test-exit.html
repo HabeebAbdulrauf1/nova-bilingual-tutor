@@ -1,0 +1,8 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Nova Payload Inspector</title><link rel="stylesheet" href="styles.css"></head>
+<body><main class="app-shell"><section class="card"><h1>Exit Payload Inspector</h1><div id="out"></div></section></main>
+<script>
+function decode(s){s=s.replace(/-/g,'+').replace(/_/g,'/');while(s.length%4)s+='=';const bin=atob(s);const bytes=Uint8Array.from(bin,c=>c.charCodeAt(0));return new TextDecoder().decode(bytes);}
+const q=new URLSearchParams(location.search).get('Q_EED');const out=document.getElementById('out');
+try{const obj=JSON.parse(decode(q||''));const rows=Object.entries(obj).map(([k,v])=>`<tr><td style="padding:7px;border:1px solid #ddd"><strong>${k}</strong></td><td style="padding:7px;border:1px solid #ddd">${String(v)}</td></tr>`).join('');out.innerHTML=`<div class="notice">If this table is complete and correct, the same Q_EED payload can be sent to Qualtrics Embedded Data.</div><table style="border-collapse:collapse;width:100%">${rows}</table>`;}catch(e){out.innerHTML='<div class="error">No valid Q_EED payload was received.</div>';}
+</script></body></html>
