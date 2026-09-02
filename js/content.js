@@ -97,15 +97,15 @@ window.NOVA_CONTENT = Object.freeze({
       explanationB: "Good AI use need judgment. You fit keep useful parts, revise weak parts, and verify claims wey you no sure about. The best response depend on the quality of each part, instead of treating every AI content as equally reliable or unreliable."
     }
   ],
-  posttest: [
+posttest: [
     {
       id: "P1C", type: "conceptual", principle: "source_verification",
       question: "An AI answer lists a research article with an author, title, year, and a link. Why is that information alone not enough to know that the source is ready to use?",
       options: {
-        A: "A research article can only be used if a lecturer recommends it.",
-        B: "Any source produced by AI must be rejected.",
+        A: "The citation is probably usable if the journal name is real and the title fits the topic.",
+        B: "The source is ready to use once the link opens to a page that looks academic.",
         C: "Realistic-looking details do not guarantee that the source exists or that the details are correct.",
-        D: "A source is reliable only when the title is very long."
+        D: "The source is ready to use if the reference is formatted correctly and includes a DOI or link."
       }, correct: "C"
     },
     {
@@ -113,29 +113,29 @@ window.NOVA_CONTENT = Object.freeze({
       question: "An AI tool gives you four sources for a class paper. What should you do before adding them to your reference list?",
       options: {
         A: "Find each original source and confirm that it exists and that the publication details match.",
-        B: "Use all four because multiple sources reduce the chance of error.",
-        C: "Keep only the sources with the most academic-sounding titles.",
-        D: "Ask the AI to rewrite all four references in APA style and then use them."
+        B: "Open each link and use the source if it leads to an academic-looking webpage.",
+        C: "Verify only the sources you plan to quote directly and use the others as the AI listed them.",
+        D: "Ask the AI to provide a DOI for each source and use any source for which it supplies one."
       }, correct: "A"
     },
     {
       id: "P2C", type: "conceptual", principle: "summary_fidelity",
       question: "A research article says a new study method “may be associated with better performance,” but an AI summary says the study method “has been proven to improve grades.” What is the main problem?",
       options: {
-        A: "The summary is too short.",
+        A: "The summary is acceptable because it communicates the practical meaning of the finding.",
         B: "The summary makes the original finding stronger than the evidence supports.",
-        C: "The original article should not discuss grades.",
-        D: "AI summaries should never use the word “study.”"
+        C: "The main problem is that the summary does not report whether the result was statistically significant.",
+        D: "The stronger wording is acceptable if the study used a large sample."
       }, correct: "B"
     },
     {
       id: "P2P", type: "procedural", principle: "summary_fidelity",
       question: "An AI summary includes a surprising statistic that is important to your assignment. What is the best next step before using the statistic?",
       options: {
-        A: "Use it because unusual statistics make an argument stronger.",
-        B: "Remove every statistic from the summary.",
-        C: "Ask the AI to repeat the statistic in a more formal style.",
-        D: "Check the statistic in the original source."
+        A: "Use it if the AI gives the article title and a precise number.",
+        B: "Check the same statistic with a second AI system and use it if both systems agree.",
+        C: "Search the statistic online and use it if several websites report the same number.",
+        D: "Check the statistic against the original source before including it in your assignment."
       }, correct: "D"
     },
     {
@@ -143,28 +143,28 @@ window.NOVA_CONTENT = Object.freeze({
       question: "Two AI answers disagree. One is longer, more detailed, and more confident than the other. What can you conclude from writing style alone?",
       options: {
         A: "Writing style alone does not establish which answer is more accurate.",
-        B: "The longer answer is more accurate.",
-        C: "The more confident answer is more accurate.",
-        D: "Both answers must be wrong because they disagree."
+        B: "The longer answer is more likely to be accurate because it gives more explanation.",
+        C: "The more confident answer is more likely to be accurate because confidence reflects certainty.",
+        D: "The more detailed answer is more likely to be accurate if it uses technical language."
       }, correct: "A"
     },
     {
       id: "P3P", type: "procedural", principle: "confidence_fluency",
       question: "An AI answer sounds authoritative but gives no evidence for an important factual claim in your essay. What should you do?",
       options: {
-        A: "Accept it because authoritative wording shows expertise.",
-        B: "Reject the entire answer without checking any part.",
+        A: "Use the claim if it is consistent with what you already know about the topic.",
+        B: "Ask the AI to explain its reasoning and use the claim if the explanation sounds coherent.",
         C: "Verify the important claim using an appropriate source before relying on it.",
-        D: "Use it only if the AI repeats the claim twice."
+        D: "Compare the claim across several AI tools and use it if the tools agree."
       }, correct: "C"
     },
     {
       id: "P4C", type: "conceptual", principle: "evidence_strength",
       question: "A survey finds that students who drink coffee more often also report studying later at night. Which conclusion is best supported?",
       options: {
-        A: "Coffee definitely causes students to study later.",
-        B: "Studying later definitely causes students to drink coffee.",
-        C: "There is no relationship because the study used a survey.",
+        A: "Coffee use probably causes later studying because coffee can help people stay awake.",
+        B: "Late-night studying probably causes coffee use because that direction seems more plausible.",
+        C: "The relationship can be treated as causal if the association is statistically significant.",
         D: "Coffee use and late-night studying are related in the survey, but the survey alone does not show which causes which."
       }, correct: "D"
     },
@@ -172,20 +172,20 @@ window.NOVA_CONTENT = Object.freeze({
       id: "P4P", type: "procedural", principle: "evidence_strength",
       question: "An AI-generated paragraph says, “Students who join campus clubs have higher GPAs, so joining a club increases GPA.” What is the best revision?",
       options: {
-        A: "Keep the statement because student clubs are generally beneficial.",
+        A: "State that club participation is associated with higher GPA and therefore probably improves GPA.",
         B: "State that club participation and GPA were related, and avoid claiming cause unless stronger evidence supports it.",
-        C: "Delete every mention of GPA.",
-        D: "Change “increases” to “guarantees.”"
+        C: "State that joining clubs may improve GPA because club members had higher GPAs in the study.",
+        D: "Keep the causal claim if the sample was large and the relationship between the variables was strong."
       }, correct: "B"
     },
     {
       id: "P5C", type: "conceptual", principle: "generalization",
       question: "A study interviews 40 nursing students at one university about academic AI use. An AI answer concludes, “Nigerian undergraduates believe AI improves learning.” Why is this conclusion too broad?",
       options: {
-        A: "Interview studies cannot produce useful evidence.",
-        B: "Forty participants is never acceptable in research.",
+        A: "The conclusion is acceptable if most of the 40 nursing students gave similar answers.",
+        B: "The main problem is that interview data cannot be used to describe students’ beliefs.",
         C: "The group studied does not justify a claim about all Nigerian undergraduates.",
-        D: "Nursing students cannot use AI for academic work."
+        D: "The conclusion would be justified if the 40 students were randomly selected from that university."
       }, correct: "C"
     },
     {
@@ -193,28 +193,28 @@ window.NOVA_CONTENT = Object.freeze({
       question: "You are writing about a finding from students in one university department. Which wording is most appropriate?",
       options: {
         A: "Describe the finding as applying to the students or setting that was actually studied unless broader evidence supports a wider claim.",
-        B: "Generalize to all Nigerian students because they are all university students.",
-        C: "Remove the name of the department and keep the broad claim.",
-        D: "Ask the AI to make the claim sound more certain."
+        B: "Describe the finding as applying to students in the same discipline, even if they were not part of the study.",
+        C: "Keep the broader claim if the participants were randomly sampled from that department.",
+        D: "Describe the finding as applying to the whole university because the study was conducted there."
       }, correct: "A"
     },
     {
       id: "P6C", type: "conceptual", principle: "appropriate_reliance",
       question: "An AI-generated paragraph has a strong structure and accurate definitions but includes one unsupported factual claim. Which judgment is best?",
       options: {
-        A: "Accept the whole paragraph because most of it is good.",
+        A: "Rely on the paragraph as a whole because one unsupported claim does not outweigh the accurate parts.",
         B: "Different parts of the output can deserve different levels of reliance.",
-        C: "Reject the whole paragraph because one part is uncertain.",
-        D: "The unsupported claim becomes acceptable if the writing is clear."
+        C: "Treat the entire paragraph as unreliable until every sentence has an external citation.",
+        D: "Use the unsupported claim provisionally because it is consistent with the accurate definitions."
       }, correct: "B"
     },
     {
       id: "P6P", type: "procedural", principle: "appropriate_reliance",
       question: "An AI tool creates a useful comparison table, but two cells contain information you cannot verify. What is the best response?",
       options: {
-        A: "Use the entire table because most of the cells look correct.",
-        B: "Delete the entire table without reviewing it.",
-        C: "Ask the AI to add more detail to the two uncertain cells.",
+        A: "Keep the two unverified cells and cite the AI tool as the source for those values.",
+        B: "Ask the AI to regenerate the two uncertain cells and use the new values if they match the first ones.",
+        C: "Remove the two uncertain cells and use the rest without checking whether their absence changes the comparison.",
         D: "Keep the verified parts and check or revise the uncertain cells before using the table."
       }, correct: "D"
     }
