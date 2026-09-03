@@ -3,7 +3,7 @@ window.NOVA_CONTENT = Object.freeze({
     {
       id: "T1",
       title: "Checking Whether a Source Exists",
-      question: "You ask an AI tool for a journal article about social media and sleep. It gives you an author name, article title, journal name, year, and a web link. What is the best next step before using the source in an assignment?",
+      question: "You ask an AI tool for a journal article about social media and sleep. It gives you an author name, article title, journal name, year, and a web link. What is the best action to take before using the source in an assignment?",
       options: {
         A: "Use it because the citation looks complete.",
         B: "Search for the original article and confirm that the source exists and the publication details match.",
@@ -19,7 +19,7 @@ window.NOVA_CONTENT = Object.freeze({
     {
       id: "T2",
       title: "Checking an AI Summary",
-      question: "An AI tool summarizes an article for your assignment. The summary is clear, but one important statement seems stronger than what the original article may have said. What is the best response?",
+      question: "An AI tool summarizes an article for your assignment. The summary is clear, but one important statement seems to overclaim what the original article may have said. What is the best action to take?",
       options: {
         A: "Keep it because a clear summary is usually accurate.",
         B: "Delete the whole summary without checking anything.",
@@ -35,7 +35,7 @@ window.NOVA_CONTENT = Object.freeze({
     {
       id: "T3",
       title: "Confidence Is Not Evidence",
-      question: "An AI tool gives a polished answer and says it is “very confident,” but it provides no evidence for an important factual claim. Which statement is best?",
+      question: "An AI tool gives a polished answer to your question and says it “confidently,” but it provides no evidence for an important factual claim. Which statement correctly describes the fact here?",
       options: {
         A: "Fluent and confident wording does not by itself prove that the claim is accurate.",
         B: "The claim is probably correct because the answer sounds professional.",
@@ -51,7 +51,7 @@ window.NOVA_CONTENT = Object.freeze({
     {
       id: "T4",
       title: "Matching Conclusions to Evidence",
-      question: "A study finds that students who exercise more often also tend to have higher grades. An AI response concludes, “Exercise causes students to get higher grades.” What is the main problem with that conclusion?",
+      question: "A study finds that students who exercise more often also tend to have higher grades. An AI response concludes, “Exercise causes students to get higher grades.” What is the main problem with this conclusion?",
       options: {
         A: "Exercise can never affect academic performance.",
         B: "Grades should not be used in research.",
@@ -67,7 +67,7 @@ window.NOVA_CONTENT = Object.freeze({
     {
       id: "T5",
       title: "Avoiding Overgeneralization",
-      question: "An AI tool summarizes a survey of 60 students from one private university and states, “Nigerian university students prefer AI tutoring to human tutoring.” What is the strongest concern?",
+      question: "An AI tool summarizes a survey of 60 students from one private university and states, “Nigerian university students prefer AI tutoring to human tutoring.” What is the main concern in this AI conclusion?",
       options: {
         A: "A survey can never be used to study student preferences.",
         B: "The finding is automatically wrong because fewer than 100 students participated.",
@@ -78,12 +78,12 @@ window.NOVA_CONTENT = Object.freeze({
       bestAnswer: "The conclusion may be broader than the group that was actually studied.",
       principle: "Do not make a broader claim than the evidence can support.",
       explanationA: "Evidence from one small group can tell us something about that group, but it does not automatically represent everyone. Before making a broad claim, consider who was studied, where they were studied, and how far the evidence can reasonably be generalized.",
-      explanationB: "Evidence from one small group fit tell us something about that group, but e no automatically represent everybody. Before you make broad claim, check who dem study, where dem study them, and how far the evidence fit reasonably generalize."
+      explanationB: "Evidence from one small group fit tell us something about that group, but e no automatically represent everybody. Before you make broad claims, check who dem study, where dem study them, and how far the evidence fit reasonably generalize."
     },
     {
       id: "T6",
       title: "Using AI Selectively",
-      question: "An AI tool produces a useful outline for an assignment, but two factual claims have no sources and one paragraph is too broad. What is the best response?",
+      question: "An AI tool produces a useful outline for an assignment, but two factual claims have no sources and one paragraph is too broad. What is the best thing to do in this situation?",
       options: {
         A: "Submit the output exactly as written because the outline is useful.",
         B: "Keep the useful structure, revise the weak paragraph, and verify the unsupported claims.",
@@ -94,7 +94,7 @@ window.NOVA_CONTENT = Object.freeze({
       bestAnswer: "Keep the useful structure, revise the weak paragraph, and verify the unsupported claims.",
       principle: "Use AI output selectively rather than accepting or rejecting everything.",
       explanationA: "Good AI use requires judgment. You can keep useful parts, revise weak parts, and verify claims you are uncertain about. The best response depends on the quality of each part of the output rather than treating all AI content as equally reliable or unreliable.",
-      explanationB: "Good AI use need judgment. You fit keep useful parts, revise weak parts, and verify claims wey you no sure about. The best response depend on the quality of each part, instead of treating every AI content as equally reliable or unreliable."
+      explanationB: "Good AI use need judgment. You fit keep useful parts, revise weak parts, and verify claims wey you no sure about. The best response depends on the quality of each part, instead of treating every AI content as equally reliable or unreliable."
     }
   ],
 posttest: [
@@ -120,7 +120,7 @@ posttest: [
     },
     {
       id: "P2C", type: "conceptual", principle: "summary_fidelity",
-      question: "A research article says a new study method “may be associated with better performance,” but an AI summary says the study method “has been proven to improve grades.” What is the main problem?",
+      question: "A research article says a new study method “may be associated with better performance,” but an AI summary says the study method “has been proven to improve grades.” What is the main problem in this AI Conclusion?",
       options: {
         A: "The summary is acceptable because it communicates the practical meaning of the finding.",
         B: "The summary makes the original finding stronger than the evidence supports.",
@@ -160,7 +160,7 @@ posttest: [
     },
     {
       id: "P4C", type: "conceptual", principle: "evidence_strength",
-      question: "A survey finds that students who drink coffee more often also report studying later at night. Which conclusion is best supported?",
+      question: "A survey finds that students who drink coffee more often also report studying later at night. Which conclusion best describes these findings?",
       options: {
         A: "Coffee use probably causes later studying because coffee can help people stay awake.",
         B: "Late-night studying probably causes coffee use because that direction seems more plausible.",
@@ -180,7 +180,7 @@ posttest: [
     },
     {
       id: "P5C", type: "conceptual", principle: "generalization",
-      question: "A study interviews 40 nursing students at one university about academic AI use. An AI answer concludes, “Nigerian undergraduates believe AI improves learning.” Why is this conclusion too broad?",
+      question: "A researcher interviews 40 nursing students at one university about academic AI use. An AI answer concludes, “Nigerian undergraduates believe AI improves learning.” Why is the correct solution ?",
       options: {
         A: "The conclusion is acceptable if most of the 40 nursing students gave similar answers.",
         B: "The main problem is that interview data cannot be used to describe students’ beliefs.",
@@ -203,14 +203,14 @@ posttest: [
       question: "An AI-generated paragraph has a strong structure and accurate definitions but includes one unsupported factual claim. Which judgment is best?",
       options: {
         A: "Rely on the paragraph as a whole because one unsupported claim does not outweigh the accurate parts.",
-        B: "Different parts of the output can deserve different levels of reliance.",
+        B: "Different parts of the output can deserve different levels of reliance/usefulness.",
         C: "Treat the entire paragraph as unreliable until every sentence has an external citation.",
         D: "Use the unsupported claim provisionally because it is consistent with the accurate definitions."
       }, correct: "B"
     },
     {
       id: "P6P", type: "procedural", principle: "appropriate_reliance",
-      question: "An AI tool creates a useful comparison table, but two cells contain information you cannot verify. What is the best response?",
+      question: "An AI tool creates a useful comparison table, but two cells contain information you cannot verify. What is the best thing to do?",
       options: {
         A: "Keep the two unverified cells and cite the AI tool as the source for those values.",
         B: "Ask the AI to regenerate the two uncertain cells and use the new values if they match the first ones.",
