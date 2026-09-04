@@ -157,7 +157,7 @@
     app.innerHTML = `
       <h1>AI Learning Activity</h1>
       <p>Hi. I’m Nova, an AI learning assistant. You will work through six short examples about using AI-generated information for academic work.</p>
-      <p>For each example, choose the best answer. After you respond, **I will show you the best answer and explain the key idea.** After the learning section, you will answer new questions on your own.</p>
+      <p>For each example, choose the best answer. After you respond, I will show you the best answer and explain the key idea. After the learning section, you will answer new questions on your own.</p>
       <p>You do not need to have taken a research-methods course to complete this activity. Read each example carefully and use the explanations to learn the ideas.</p>
       <button class="primary-btn" id="startBtn">Start</button>`;
     document.getElementById("startBtn").addEventListener("click", () => {
