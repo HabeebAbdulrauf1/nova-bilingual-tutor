@@ -218,7 +218,7 @@
     setProgress("Learning activity", CONTENT.training.length, CONTENT.training.length);
     app.innerHTML = `
       <h2>Before we continue</h2>
-      <p>Thinking about the six learning examples you just completed, how much mental effort did you invest in understanding Nova’s explanations?</p>
+      <p>Think only about the explanations Nova showed after each of the six learning examples. How much mental effort did you invest in understanding those explanations?</p>
       <div class="scale-endpoints"><span>1 = Very, very low mental effort</span><span>9 = Very, very high mental effort</span></div>
       <div class="scale-grid">${Array.from({length:9},(_,i)=>`<button class="scale-btn ${state.mentalEffort===i+1?'selected':''}" data-value="${i+1}">${i+1}</button>`).join("")}</div>
       <button class="primary-btn ${state.mentalEffort ? '' : 'hidden'}" id="mentalContinue">Continue</button>`;
