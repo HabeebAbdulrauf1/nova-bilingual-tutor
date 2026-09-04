@@ -180,7 +180,7 @@ posttest: [
     },
     {
       id: "P5C", type: "conceptual", principle: "generalization",
-      question: "A researcher interviews 40 nursing students at one university about academic AI use. An AI answer concludes, “Nigerian undergraduates believe AI improves learning.” Why is the correct solution ?",
+      question: "A researcher interviews 40 nursing students at one university about academic AI use. An AI answer concludes, “Nigerian undergraduates believe AI improves learning.” What is the correct answer ?",
       options: {
         A: "The conclusion is acceptable if most of the 40 nursing students gave similar answers.",
         B: "The main problem is that interview data cannot be used to describe students’ beliefs.",
